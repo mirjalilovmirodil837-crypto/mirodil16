@@ -1,0 +1,50 @@
+body{
+font-family:sans-serif;
+background:#f2f2f2;
+}
+
+.list{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+height:120px;
+}
+
+button{
+background:#32e64d;
+border:none;
+padding:6px 15px;
+border-radius:6px;
+}
+
+@media (max-width:1024px){
+.list{
+grid-template-columns: repeat(3,1fr);
+}
+}
+
+@media (max-width:768px){
+.list{
+grid-template-columns: repeat(2,1fr);
+}
+}
+
+@media (max-width:480px){
+
+.list{
+grid-template-columns: 1fr;
+}
+
+}
